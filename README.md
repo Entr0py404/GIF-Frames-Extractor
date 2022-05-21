@@ -1,7 +1,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About GIF Frames Extractor
 
-![Screenshot 2022-05-21 014427](https://user-images.githubusercontent.com/75917656/169643958-7df08d1a-568a-46ce-86dd-f025b781b4db.png)
+![GIF_Frames_Extractor_WpENmHRVUc](https://user-images.githubusercontent.com/75917656/169644998-8df0c68c-0a87-485a-aff1-0cb2f5eee5e2.gif)
 
 This is a program that extracts frames from animated GIFs.
 
@@ -15,7 +15,7 @@ Visual studio: vb<span>.net</span> target framework 4.7.2.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-https://user-images.githubusercontent.com/75917656/169644817-41173efb-e25f-464d-ae98-a34cfe306710.mp4
+![4StVm3SJaj](https://user-images.githubusercontent.com/75917656/169645000-915e630b-dbdb-4b85-a608-cb89963e81ed.gif)
 
 
 <!-- LICENSE -->
