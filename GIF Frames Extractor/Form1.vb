@@ -1,18 +1,16 @@
-﻿Imports System.ComponentModel
-Imports System.Drawing.Drawing2D
-Public Class Form1
+﻿Public Class Form1
     Dim fd1 As Imaging.FrameDimension
     Dim GIF_FrameCount As Integer = 0
     Dim EventsOn As Boolean = False
     'Form1 - Load
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        PixelBox1.AllowDrop = True
         'Load setttings
         ToolStripMenuItem_CompletionNotification.Checked = My.Settings.CompletionNotification
         EventsOn = True
+        MenuStrip1.Renderer = New ToolStripProfessionalRenderer(New ColorTable())
     End Sub
-    'PixelBox1 - DragDrop
-    Private Sub PixelBox1_DragDrop(sender As Object, e As DragEventArgs) Handles PixelBox1.DragDrop
+    'Form1 - DragDrop
+    Private Sub Form1_DragDrop(sender As Object, e As DragEventArgs) Handles Me.DragDrop
         Dim files() As String = CType(e.Data.GetData(DataFormats.FileDrop), String())
         If files.Length <> 0 Then
             Try
@@ -30,8 +28,8 @@ Public Class Form1
             End Try
         End If
     End Sub
-    'PixelBox1 - DragEnter
-    Private Sub PixelBox1_DragEnter(sender As Object, e As DragEventArgs) Handles PixelBox1.DragEnter
+    'Form1 - DragEnter
+    Private Sub Form1_DragEnter(sender As Object, e As DragEventArgs) Handles Me.DragEnter
         Dim files() As String = CType(e.Data.GetData(DataFormats.FileDrop), String())
         If e.Data.GetDataPresent(DataFormats.FileDrop) And Path.GetExtension(files(0)).ToLower = ".gif" Then
             e.Effect = DragDropEffects.Copy
@@ -164,33 +162,5 @@ Public Class Form1
         If EventsOn = True Then
             My.Settings.CompletionNotification = ToolStripMenuItem_CompletionNotification.Checked
         End If
-    End Sub
-End Class
-
-Public Class PixelBox
-    Inherits PictureBox
-
-    <Category("Behavior")>
-    <DefaultValue(InterpolationMode.NearestNeighbor)>
-    Public Property InterpolationMode As InterpolationMode = InterpolationMode.NearestNeighbor
-
-    <Category("Behavior")>
-    <DefaultValue(PixelOffsetMode.Default)>
-    Public Property PixelOffsetMode As PixelOffsetMode = PixelOffsetMode.Default
-
-    <Category("Behavior")>
-    <DefaultValue(SmoothingMode.Default)>
-    Public Property SmoothingMode As SmoothingMode = SmoothingMode.Default
-
-    <Category("Behavior")>
-    <DefaultValue(CompositingQuality.Default)>
-    Public Property CompositingQuality As CompositingQuality = CompositingQuality.Default
-
-    Protected Overrides Sub OnPaint(e As PaintEventArgs)
-        e.Graphics.InterpolationMode = Me.InterpolationMode
-        e.Graphics.PixelOffsetMode = Me.PixelOffsetMode
-        e.Graphics.SmoothingMode = Me.SmoothingMode
-        e.Graphics.CompositingQuality = Me.CompositingQuality
-        MyBase.OnPaint(e)
     End Sub
 End Class

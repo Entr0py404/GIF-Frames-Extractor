@@ -8,7 +8,7 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("GIF Frames Extractor")>
-<Assembly: AssemblyDescription("GIF Frames Extractor")>
+<Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("Entropy Software")>
 <Assembly: AssemblyProduct("GIF Frames Extractor")>
 <Assembly: AssemblyCopyright("")>

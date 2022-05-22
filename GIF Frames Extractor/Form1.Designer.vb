@@ -66,20 +66,20 @@ Partial Class Form1
         Me.Label_ExportDirectory.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_ExportDirectory.Location = New System.Drawing.Point(8, 64)
         Me.Label_ExportDirectory.Name = "Label_ExportDirectory"
-        Me.Label_ExportDirectory.Size = New System.Drawing.Size(104, 23)
+        Me.Label_ExportDirectory.Size = New System.Drawing.Size(120, 23)
         Me.Label_ExportDirectory.TabIndex = 24
-        Me.Label_ExportDirectory.Text = "Export Directory:"
-        Me.Label_ExportDirectory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label_ExportDirectory.Text = "Export Directory"
+        Me.Label_ExportDirectory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label_FileName
         '
         Me.Label_FileName.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_FileName.Location = New System.Drawing.Point(8, 8)
         Me.Label_FileName.Name = "Label_FileName"
-        Me.Label_FileName.Size = New System.Drawing.Size(72, 24)
+        Me.Label_FileName.Size = New System.Drawing.Size(80, 24)
         Me.Label_FileName.TabIndex = 23
-        Me.Label_FileName.Text = "File Name:"
-        Me.Label_FileName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label_FileName.Text = "File Name"
+        Me.Label_FileName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'TextBox_FileName
         '
@@ -232,7 +232,6 @@ Partial Class Form1
         'Button_SelectExportDirectory
         '
         Me.Button_SelectExportDirectory.BackColor = System.Drawing.Color.DodgerBlue
-        Me.Button_SelectExportDirectory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button_SelectExportDirectory.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.Button_SelectExportDirectory.FlatAppearance.BorderSize = 0
         Me.Button_SelectExportDirectory.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -247,13 +246,12 @@ Partial Class Form1
         'Button_ExtractFrames
         '
         Me.Button_ExtractFrames.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.Button_ExtractFrames.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button_ExtractFrames.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.Button_ExtractFrames.FlatAppearance.BorderSize = 0
         Me.Button_ExtractFrames.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button_ExtractFrames.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button_ExtractFrames.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button_ExtractFrames.Location = New System.Drawing.Point(56, 128)
+        Me.Button_ExtractFrames.Location = New System.Drawing.Point(24, 128)
         Me.Button_ExtractFrames.Name = "Button_ExtractFrames"
         Me.Button_ExtractFrames.Size = New System.Drawing.Size(208, 32)
         Me.Button_ExtractFrames.TabIndex = 4
@@ -309,7 +307,6 @@ Partial Class Form1
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(330, 32)
         Me.MenuStrip1.TabIndex = 86
-        Me.MenuStrip1.Text = "MenuStrip1"
         '
         'ToolStripMenuItem1
         '
@@ -354,6 +351,7 @@ Partial Class Form1
         '
         'Form1
         '
+        Me.AllowDrop = True
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer))
