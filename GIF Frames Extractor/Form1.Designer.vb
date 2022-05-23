@@ -44,12 +44,12 @@ Partial Class Form1
         Me.ShapeContainer2 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label_FramesCount = New System.Windows.Forms.Label()
+        Me.PixelBox1 = New GIF_Frames_Extractor.PixelBox()
         Me.ShapeContainer3 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem_Clear = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem_CompletionNotification = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PixelBox1 = New GIF_Frames_Extractor.PixelBox()
         Me.Panel_Main.SuspendLayout()
         Me.Panel_ControlBox.SuspendLayout()
         CType(Me.PictureBox_Close, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -57,8 +57,8 @@ Partial Class Form1
         CType(Me.PictureBox_AppIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        Me.MenuStrip1.SuspendLayout()
         CType(Me.PixelBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label_ExportDirectory
@@ -212,7 +212,7 @@ Partial Class Form1
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(312, 13)
         Me.Label1.TabIndex = 81
-        Me.Label1.Text = "Drag And Drop GIF Here"
+        Me.Label1.Text = "Drag && Drop GIF Here"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel1
@@ -288,6 +288,17 @@ Partial Class Form1
         Me.Label_FramesCount.TabIndex = 26
         Me.Label_FramesCount.Text = "Frames:"
         '
+        'PixelBox1
+        '
+        Me.PixelBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.PixelBox1.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality
+        Me.PixelBox1.Location = New System.Drawing.Point(8, 8)
+        Me.PixelBox1.Name = "PixelBox1"
+        Me.PixelBox1.Size = New System.Drawing.Size(296, 208)
+        Me.PixelBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PixelBox1.TabIndex = 27
+        Me.PixelBox1.TabStop = False
+        '
         'ShapeContainer3
         '
         Me.ShapeContainer3.Location = New System.Drawing.Point(0, 0)
@@ -338,17 +349,6 @@ Partial Class Form1
         Me.ToolStripMenuItem_CompletionNotification.Size = New System.Drawing.Size(203, 22)
         Me.ToolStripMenuItem_CompletionNotification.Text = "Completion Notification"
         '
-        'PixelBox1
-        '
-        Me.PixelBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.PixelBox1.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality
-        Me.PixelBox1.Location = New System.Drawing.Point(8, 8)
-        Me.PixelBox1.Name = "PixelBox1"
-        Me.PixelBox1.Size = New System.Drawing.Size(296, 208)
-        Me.PixelBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PixelBox1.TabIndex = 27
-        Me.PixelBox1.TabStop = False
-        '
         'Form1
         '
         Me.AllowDrop = True
@@ -377,9 +377,9 @@ Partial Class Form1
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.PixelBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        CType(Me.PixelBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

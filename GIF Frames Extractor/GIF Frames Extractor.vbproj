@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.PowerPacks" />
     <Import Include="System" />
     <Import Include="System.Collections" />
     <Import Include="System.Collections.Generic" />
@@ -143,7 +144,6 @@
     <None Include="Resources\Clear.png" />
     <None Include="Resources\Application_Icon.png" />
     <Content Include="Application_Icon.ico" />
-    <None Include="packages.config" />
     <None Include="Resources\Minimize_Grey.png" />
     <None Include="Resources\Minimize_Blue.png" />
     <None Include="Resources\Close_Red.png" />
