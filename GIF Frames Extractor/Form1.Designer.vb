@@ -312,6 +312,7 @@ Partial Class Form1
         'MenuStrip1
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 26)
@@ -325,7 +326,7 @@ Partial Class Form1
         Me.ToolStripMenuItem1.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.ToolStripMenuItem1.Image = Global.GIF_Frames_Extractor.My.Resources.Resources.Settings
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(85, 28)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(102, 28)
         Me.ToolStripMenuItem1.Text = "Settings"
         '
         'ToolStripMenuItem_Clear
@@ -334,7 +335,7 @@ Partial Class Form1
         Me.ToolStripMenuItem_Clear.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.ToolStripMenuItem_Clear.Image = Global.GIF_Frames_Extractor.My.Resources.Resources.Clear
         Me.ToolStripMenuItem_Clear.Name = "ToolStripMenuItem_Clear"
-        Me.ToolStripMenuItem_Clear.Size = New System.Drawing.Size(203, 22)
+        Me.ToolStripMenuItem_Clear.Size = New System.Drawing.Size(254, 30)
         Me.ToolStripMenuItem_Clear.Text = "Clear"
         '
         'ToolStripMenuItem_CompletionNotification
@@ -346,7 +347,7 @@ Partial Class Form1
         Me.ToolStripMenuItem_CompletionNotification.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.ToolStripMenuItem_CompletionNotification.Image = Global.GIF_Frames_Extractor.My.Resources.Resources.Notification
         Me.ToolStripMenuItem_CompletionNotification.Name = "ToolStripMenuItem_CompletionNotification"
-        Me.ToolStripMenuItem_CompletionNotification.Size = New System.Drawing.Size(203, 22)
+        Me.ToolStripMenuItem_CompletionNotification.Size = New System.Drawing.Size(254, 30)
         Me.ToolStripMenuItem_CompletionNotification.Text = "Completion Notification"
         '
         'Form1
