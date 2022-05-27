@@ -3,7 +3,8 @@
 
 This is a program that extracts frames from animated GIFs.
 
-![GIF_Frames_Extractor_WpENmHRVUc](https://user-images.githubusercontent.com/75917656/169644998-8df0c68c-0a87-485a-aff1-0cb2f5eee5e2.gif)
+![GIF_Frames_Extractor_2blkTF1EsX](https://user-images.githubusercontent.com/75917656/170722702-12fce3df-f33a-429b-8282-d52cd05bedcd.gif)
+
 
 
 <!-- BUILT WITH  -->
@@ -16,7 +17,8 @@ Visual studio: vb<span>.net</span> target framework 4.7.2.
 ## Usage
 
 Just drag & drop a gif into the window, set the name and export directory then export the frames.
-![4StVm3SJaj](https://user-images.githubusercontent.com/75917656/169645000-915e630b-dbdb-4b85-a608-cb89963e81ed.gif)
+
+![tBpMaCE8DJ](https://user-images.githubusercontent.com/75917656/170722691-b531fd9e-6223-4c47-b3a7-5e44c7686f3f.gif)
 
 
 <!-- LICENSE -->
