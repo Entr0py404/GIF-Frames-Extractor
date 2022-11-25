@@ -1,5 +1,5 @@
 ﻿Public Class Form1
-    Dim fd1 As Imaging.FrameDimension
+    Dim GIF_FrameDimension As Imaging.FrameDimension
     Dim GIF_FrameCount As Integer = 0
     Dim EventsOn As Boolean = False
     'Form1 - Load
@@ -20,8 +20,8 @@
                 TextBox_FileName.Text = Path.GetFileNameWithoutExtension(files(0))
                 TextBox_ExportDirectory.Clear()
                 TextBox_ExportDirectory.AppendText(Path.GetDirectoryName(files(0)))
-                fd1 = New Imaging.FrameDimension(PixelBox1.Image.FrameDimensionsList()(0))
-                GIF_FrameCount = PixelBox1.Image.GetFrameCount(fd1)
+                GIF_FrameDimension = New Imaging.FrameDimension(PixelBox1.Image.FrameDimensionsList()(0))
+                GIF_FrameCount = PixelBox1.Image.GetFrameCount(GIF_FrameDimension)
                 Label_FramesCount.Text = "Frames: " & GIF_FrameCount
             Catch ex As Exception
                 MessageBox.Show(ex.Message)
@@ -49,7 +49,7 @@
         If PixelBox1.Image IsNot Nothing Then
             PixelBox1.Enabled = False
             For index As Integer = 0 To GIF_FrameCount - 1
-                PixelBox1.Image.SelectActiveFrame(fd1, index)
+                PixelBox1.Image.SelectActiveFrame(GIF_FrameDimension, index)
                 PixelBox1.Invalidate()
                 PixelBox1.Image.Save(TextBox_ExportDirectory.Text & "\" & TextBox_FileName.Text & "_" & index + 1 & ".png", Imaging.ImageFormat.Png)
             Next
@@ -72,7 +72,7 @@
     End Sub
     'CleanInput
     Function CleanInput(strIn As String) As String
-        ' Replace invalid characters with empty strings.
+        'Replace invalid characters with empty strings.
         Try
             'If we timeout when replacing invalid characters, we should return String.Empty.
             Return Regex.Replace(strIn, "[^\w\.@-]", "")
@@ -88,14 +88,6 @@
             End If
         End If
     End Sub
-    'GetMemoryBitmapFromFile(path)
-    Public Shared Function GetMemoryBitmapFromFile(path As String) As Bitmap
-        Dim bm As Bitmap
-        Using img As Image = Image.FromFile(path)
-            bm = New Bitmap(img)
-        End Using
-        Return bm
-    End Function
     'ToolStripMenuItem_Clear - Click
     Private Sub ToolStripMenuItem_Clear_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem_Clear.Click
         ClearAllForNext()
